@@ -1,0 +1,362 @@
+/* Add your CSS styles here */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Styling */
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Mapa_de_Cuautinchan_II.jpeg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Container */
+.homepage-container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+}
+
+/* Left Section (Storytelling) */
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+/* Right Section (Modern Mapmaking) */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+}
+
+/* Buttons Styling */
+.btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius:5px;
+    padding: 12px 24px;
+    margin: 20px 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect: Glowing + Slight Move */
+.btn:hover {
+    background-color: #001f3f; /* Gold tint */
+}
+
+/* Click effect (button press animation) */
+.btn:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Button Specific Positions */
+#why-nuna { margin-top: -20px; }
+#register { margin-top: 20px; }
+#login { margin-top: 20px; }
+
+#make-maps {
+    background-color: navy; /* Navy blue color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover Effect for Make Maps */
+#make-maps:hover {
+    background-color: #001f3f; /* Gold tint */
+}
+
+#make-maps:active {
+    transform: scale(0.95); 
+}
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Styling */
+.register-page {
+    background-image: url('https://smarthistory.org/wp-content/uploads/2023/11/102093001-2048x1475.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers content */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ensure Inputs Are Visible */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.canoe-btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Animation */
+.canoe-btn:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+}
+
+/* Ensure Image Doesn't Hide Form */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.login-page {
+    background-image: url('https://the-public-domain-review.imgix.net/collections/maps-of-the-lower-mississippi-harold-fisk/mississippi-meander-fisk-banner.jpg?fit=max&w=1200&h=850&auto=format,compress');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Buttons */
+.canoe-btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Canoe Hover Animation */
+.canoe-btn:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+}
+
+.canoe-btn::before {
+    content: "🚣‍♂️";
+    position: absolute;
+    left: -30px;
+    transition: left 0.5s ease;
+}
+
+.canoe-btn:hover::before {
+    left: 100%;
+}
+
+/* Ensure image description is visible */
+.image-description {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 500px;
+}
+
+/* Style headers inside image description */
+.image-description h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Style paragraphs inside image description */
+.image-description p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Move the text higher on register.html */
+.register-page .image-description {
+    position: relative;
+    top: -500px; /* Moves the container 50px upwards */
+}
+
+/* Adjust position for the text in login.html */
+.login-page .image-description {
+    margin-left: -45px; /* Moves text slightly to the left */
+}
+
+/* Ensure the text containers are readable */
+.whynuna-page {
+    background-image: url('assets/hawaii.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Style for "What is Nuna" section */
+.nuna-description {
+    max-width: 60%; /* Controls width */
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency for readability */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Align text properly */
+    margin: 20px auto; /* Centers and adds spacing */
+}
+
+/* Style for "About the Creator" table */
+.about-creator {
+    max-width: 50%; /* Reduces table width */
+    background: rgba(255, 255, 255, 0.85); /* Adds readability */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px auto; /* Centers the table */
+}
+
+/* Reduce spacing inside table cells */
+.about-creator td, .about-creator th {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc; /* Adds subtle separation */
+}
+
+/* General container styling */
+.container {
+    background: rgba(255, 255, 255, 0.85); /* White background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+h1, h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Background image adjustments */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+strong {
+    color: navy;
+}
+
+/* Return to Homepage Button */
+.home-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: navy;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Hover Effect */
+.home-btn:hover {
+    background: #0044cc;
+    transform: scale(1.05);
+}
