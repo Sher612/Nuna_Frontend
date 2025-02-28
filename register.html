@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Nuna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">  <!-- Background styling via CSS -->
+
+
+    <div class="form-container">
+        <h1>Join Nuna</h1>
+        <p>Set sail on your mapping journey.</p>
+
+        <form id="registerForm">
+            <!-- Username Field -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required 
+                   pattern="^[a-zA-Z0-9_]{3,15}$" 
+                   title="3-15 characters, no special symbols.">
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required 
+                   pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                   title="At least 8 characters with a number.">
+
+            <!-- Dropdown for Cartography Interest -->
+            <label for="cartography-interest">Your cartography interest:</label>
+            <select id="cartography-interest" name="cartography-interest">
+                <option value="artist">Artistic Mapmaker</option>
+                <option value="geographer">Data-Driven Geographer</option>
+                <option value="history">Historical Cartography Enthusiast</option>
+                <option value="environmental">Environmental & Sustainability Mapper</option>
+                <option value="maritime">Navigational/Maritime Explorer</option>
+                <option value="fantasy">Fantasy/World-Building Mapper</option>
+                <option value="curious">Just Curious!</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" class="canoe-btn">Register</button>
+        </form>
+    </div>
+
+    <button id="homeButton" class="home-btn">Return to Homepage</button>
+
+    <!-- Background Image with Descriptive Text -->
+    <div class="image-description">
+        <h2>Navigation chart made of sticks and cowrie shells</h2>
+        <p>The diagonal sticks represent wave swells for sailors to anticipate piloting canoes around the Marshall Islands.</p>
+    </div>
+
+    <!-- Background Image with Alt Text -->
+    <img src="https://smarthistory.org/wp-content/uploads/2023/11/102093001-2048x1475.jpg" alt="Navigation chart constructed from wooden sticks and cowrie shells." class="background-image">
+
+    <script src="script.js"></script>  <!-- Link to JavaScript -->
+</body>
+</html>
